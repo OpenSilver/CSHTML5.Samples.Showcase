@@ -15,7 +15,7 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: Set directory environment variables
-        if: "${{ github.event.inputs.opensilver-branch == 'develop' }}"
+        #if: "${{ github.event.inputs.opensilver-branch == 'develop' }}"
         run: |
           echo "vdir=${{ env.virtual-directory }}" >> $env:GITHUB_ENV
           echo "apath=${{ env.app-path }}" >> $env:GITHUB_ENV
